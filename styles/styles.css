@@ -1,0 +1,61 @@
+body {
+    background-color: #6dbcdb;
+}
+
+.progressBar-exterior {
+    background-color: white;
+    width: 3000px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.progressBar-interior {
+    background-color: lightblue;
+    width: 88%;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 3%;
+}
+
+.progressBar--fill {
+    background-color: #6ad4a6;
+    width: 0%;
+    height: 100px;
+    animation: loading 4000ms forwards ease-out;
+}
+
+.icon-checkmark {
+    font-size: 100px;
+    color: lightblue;
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    right: 3%;
+    animation: color-change 100ms 4000ms forwards;
+w}
+
+
+@keyframes loading {
+    0% { width: 0%; }
+    25% { width: 25%; }
+    50% { width: 50%; }
+    75% { width: 75%; }
+    100% { width: 100%; }
+}
+@keyframes color-change {
+    0% { color: lightblue; }
+    100% { color: #6ad4a6; }
+}
+
+
+
+
+
+
