@@ -3,43 +3,44 @@ body {
 }
 
 .progressBar-exterior {
+    border-radius: 0.2em;
     background-color: white;
-    width: 3000px;
-    height: 200px;
+    width: 55em;
+    height: 4em;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 10px grey;
+
 }
 
 .progressBar-interior {
+    border-radius: 0.2em;
     background-color: lightblue;
     width: 88%;
-    height: 100px;
+    height: 2em;
     position: absolute;
     top: 25%;
-    bottom: 25%;
-    left: 3%;
+    left: 2.5%;
 }
 
 .progressBar--fill {
     background-color: #6ad4a6;
     width: 0%;
-    height: 100px;
+    height: 2em;
     animation: loading 4000ms forwards ease-out;
 }
 
 .icon-checkmark {
-    font-size: 100px;
+    font-size: 2.5em;
     color: lightblue;
-    height: 150px;
     width: auto;
     position: absolute;
-    top: 25%;
-    bottom: 25%;
-    right: 3%;
-    animation: color-change 100ms 4000ms forwards;
-w}
+    top: 18%;
+    right: 2.5%;
+    animation: color-change 10ms 4000ms forwards;
+}
 
 
 @keyframes loading {
